@@ -20,14 +20,10 @@ return
     vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
     vim.keymap.set("n", "<leader>fh", ":Telescope find_files hidden=true <CR>")
 
+
+    vim.keymap.set("n", "<leader>en", function()
+     builtin.find_files { cwd = vim.fn.stdpath "config" }
+    end)
   end,
 
-
-    vim.keymap.set("n", "<space>en", function()
-  builtin.find_files { cwd = vim.fn.stdpath "config" }
-end)
 }
-
-
-
-
