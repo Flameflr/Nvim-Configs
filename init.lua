@@ -1,9 +1,9 @@
 require("core.lazy")
 require("config.remap")
-require("plugins.colorscheme")
-require("plugins.fuzzyfinder")
-require("plugins.tree")
-require("plugins.oil")
+require("lsp")
+
+
+require("lazy").setup("plugins")
 
 
 vim.opt.shiftwidth = 4
