@@ -1,0 +1,2 @@
+- JetBrainsMono Nerd Font: (https://www.nerdfonts.com/font-downloads - search for name)
+- Node/npm: node/npm installation (I use nvm https://github.com/nvm-sh/nvm to select the right node/npm version)
