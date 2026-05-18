@@ -14,10 +14,11 @@ sudo rm -rf nvim-linux-x86_64.tar.gz
 # Install  and setup JetBrainsMono Nerd font 
 
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
-sudo unzip JetBrainsMono.zip
-mv *.ttf ~/.local/share/fonts
-fc-cache -v
-sudo rm -rf JetBrainsMono.zip
+mkdir -p ~/.local/share/fonts/JetBrainsMono
+unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
+mv *.ttf ~/.local/share/fonts/JetBrainsMono
+fc-cache -fv
+rm -rf JetBrainsMono.zip
 
 # Install nvm to install Node/npm
 
