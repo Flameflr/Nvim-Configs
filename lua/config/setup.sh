@@ -16,6 +16,8 @@ sudo rm -rf nvim-linux-x86_64.tar.gz
 else
     echo "Neovim already installed. Skipping..."
 
+fi
+
 # Install  and setup JetBrainsMono Nerd font 
 
 if ! fc-list :family | grep -qi "JetBrainsMono Nerd Font"; then
@@ -29,6 +31,7 @@ rm -rf JetBrainsMono.zip
 
 else
     echo "JetBrainsMono-Nerd-font already installed. Skipping..."
+fi
 
 # Install nvm to install Node/npm
 
@@ -39,6 +42,9 @@ source ~/.bashrc
 
 else 
     echo "nvm already installed. Skipping..."
+
+fi
+
 # Message
 
 echo "Installation was successfull!"
